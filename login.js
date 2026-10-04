@@ -1,0 +1,37 @@
+
+function login() {
+
+    // Get User ID and Password
+
+    let userid = document.getElementById("userid").value;
+    let password = document.getElementById("password").value;
+
+    let message = document.getElementById("message");
+
+
+    // Practice login details
+
+    if (userid === "admin" && password === "1234") {
+
+        message.innerHTML = "Login successful!";
+        message.style.color = "green";
+
+
+        // Open e-commerce home page
+
+        setTimeout(function() {
+
+            window.location.href = "index.html";
+
+        }, 1000);
+
+
+    } else {
+
+        message.innerHTML = "Invalid User ID or Password!";
+        message.style.color = "red";
+
+    }
+
+}
+
